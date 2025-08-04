@@ -28,9 +28,9 @@ const WhyTeensLove = () => {
   ];
 
   const earnedItems = [
-    { icon: Gamepad2, name: "Gaming Headset", price: "$80" },
-    { icon: Smartphone, name: "Phone Case", price: "$25" },
-    { icon: Headphones, name: "AirPods", price: "$180" }
+    { icon: Gamepad2, name: "Gaming Setup", price: "$500" },
+    { icon: Smartphone, name: "Latest iPhone", price: "$800" },
+    { icon: Headphones, name: "Concert Tickets", price: "$100" }
   ];
 
   return (
@@ -38,15 +38,17 @@ const WhyTeensLove = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4">
-            Why Teens{" "}
+            Stop Asking for Money.{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Love
-            </span>{" "}
-            All Giggs
+              Start Making It!
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real gigs, real money, real skills. Start earning while building your future!
+            Imagine buying anything you want with YOUR OWN money. No more waiting for allowance, no more asking parents for cash. Just pure financial freedom! 🚀
           </p>
+          <div className="mt-6">
+            <span className="text-lg font-bold text-primary">⚡ Kids are earning $50-500+ per month!</span>
+          </div>
         </div>
 
         {/* Gig Examples */}
@@ -79,10 +81,10 @@ const WhyTeensLove = () => {
         <div className="bg-gradient-secondary rounded-2xl p-8 md:p-12 animate-fade-in">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              What can teens buy with their earnings?
+              What Could You Buy? 🤔
             </h3>
             <p className="text-muted-foreground">
-              Turn your hustle into the things you actually want!
+              Be the kid who has their own money! While your friends are asking their parents for money, you'll be the one with cash in your pocket. 💪
             </p>
           </div>
 
@@ -106,7 +108,7 @@ const WhyTeensLove = () => {
 
           <div className="text-center">
             <Button variant="cta" size="lg">
-              Start Earning Today
+              I Want Financial Freedom! 🚀
             </Button>
           </div>
         </div>

@@ -5,18 +5,18 @@ const ParentsSection = () => {
   const safetyFeatures = [
     {
       icon: Shield,
-      title: "Background-checked gig posters",
-      description: "Every job poster goes through verification for your peace of mind"
+      title: "Financial Education",
+      description: "Your child learns real-world money management, budgeting, and saving skills that schools don't teach."
     },
     {
       icon: CreditCard,
-      title: "Secure payments through Stripe",
-      description: "Industry-standard payment processing keeps everyone safe"
+      title: "Safe & Supervised",
+      description: "All jobs are vetted, payments secured through Stripe, and you maintain full oversight of activities."
     },
     {
       icon: Lock,
-      title: "Teen privacy protected",
-      description: "Personal information stays private with strict data protection"
+      title: "Entrepreneurial Mindset",
+      description: "Build confidence, work ethic, and business thinking that will benefit them for life."
     }
   ];
 
@@ -25,14 +25,14 @@ const ParentsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4">
-            Built with{" "}
+            Why Parents{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Parents
+              Love
             </span>{" "}
-            in Mind
+            All Giggs
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Safety, verification, and peace of mind. We get it – your teen's safety comes first.
+            Give your child the head start they deserve. All Giggs isn't just about earning money—it's about building the foundation for a successful, financially responsible future.
           </p>
         </div>
 
@@ -77,11 +77,11 @@ const ParentsSection = () => {
                   ))}
                 </div>
                 <blockquote className="text-2xl md:text-3xl font-bold text-foreground mb-6 italic">
-                  "Finally, a side hustle platform I can trust for my kids."
+                  "The earlier kids learn about money, the better prepared they'll be for life. All Giggs teaches them that money isn't just given—it's earned through hard work and dedication."
                 </blockquote>
                 <div className="flex items-center justify-center gap-3 text-muted-foreground">
                   <Heart size={20} className="text-red-500 fill-red-500" />
-                  <span className="font-medium">Sarah M., Parent of two teens</span>
+                  <span className="font-medium">Dr. Sarah Johnson, Child Development Expert & Mom of 3</span>
                 </div>
               </div>
             </CardContent>

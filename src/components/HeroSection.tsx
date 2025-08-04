@@ -33,27 +33,22 @@ const HeroSection = () => {
           <div className="space-y-8 text-center lg:text-left animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight">
-                Teens{" "}
+                Turn Kids Into{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Earning.
-                </span>{" "}
-                Parents{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Smiling.
+                  Money Makers
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl">
-                Find safe, real gigs in your neighborhood—start building skills,
-                confidence, and your wallet.
+                The first marketplace where kids ages 10+ can find real jobs in their neighborhood and start building their financial future today!
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="xl" className="animate-bounce-gentle">
-                Join the Waitlist
+                Get Early Access Now
               </Button>
               <Button variant="outline" size="xl">
-                Learn More
+                For Parents
               </Button>
             </div>
 

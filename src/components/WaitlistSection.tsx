@@ -41,13 +41,13 @@ const WaitlistSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in mb-12">
             <h2 className="text-4xl md:text-6xl font-black text-foreground mb-6">
-              Be First in Line to{" "}
+              📱 Coming to App Stores{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Start Earning
+                Soon!
               </span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-              Launching soon. Sign up to get notified first and unlock exclusive early access.
+              We're putting the finishing touches on our mobile apps. Sign up now to get early access and be among the first to start earning!
             </p>
             <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-6 py-2 text-sm font-medium text-primary">
               <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
