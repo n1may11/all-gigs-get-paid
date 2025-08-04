@@ -91,7 +91,11 @@ const HowItWorks = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in">
-          <Button variant="cta" size="lg">
+          <Button 
+            variant="cta" 
+            size="lg"
+            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Start Your Journey! 🎉
           </Button>
         </div>

@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import FounderSection from "@/components/FounderSection";
 import WaitlistSection from "@/components/WaitlistSection";
 import Footer from "@/components/Footer";
-import ThemeToggle from "@/components/ThemeToggle";
+
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -48,12 +48,10 @@ const Index = () => {
                   {link.name}
                 </a>
               ))}
-              <ThemeToggle />
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-2">
-              <ThemeToggle />
+            <div className="md:hidden flex items-center">
               <Button
                 variant="ghost"
                 size="icon"

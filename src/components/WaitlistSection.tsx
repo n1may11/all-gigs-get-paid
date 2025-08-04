@@ -10,9 +10,15 @@ const WaitlistSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement actual waitlist signup
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    if (email) {
+      // TODO: Implement actual waitlist signup with Supabase
+      console.log('Signing up with email:', email);
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setEmail("");
+      }, 3000);
+    }
   };
 
   const benefits = [

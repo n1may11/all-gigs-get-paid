@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Purple-themed All Giggs Design System */
+    /* Purple-themed All Giggs Design System - Single Mode */
     --background: 255 255% 98%;
     --foreground: 270 15% 15%;
 
@@ -55,77 +55,46 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    /* Dark mode purple theme */
-    --background: 270 20% 8%;
-    --foreground: 270 10% 95%;
-
-    --card: 270 25% 10%;
-    --card-foreground: 270 10% 95%;
-
-    --popover: 270 25% 10%;
-    --popover-foreground: 270 10% 95%;
-
-    --primary: 270 91% 75%;
-    --primary-foreground: 270 20% 8%;
-    --primary-glow: 270 91% 85%;
-
-    --secondary: 270 20% 15%;
-    --secondary-foreground: 270 10% 95%;
-
-    --muted: 270 15% 12%;
-    --muted-foreground: 270 8% 65%;
-
-    --accent: 270 30% 20%;
-    --accent-foreground: 270 10% 95%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 270 10% 95%;
-
-    --border: 270 20% 18%;
-    --input: 270 20% 18%;
-    --ring: 270 91% 75%;
-
-    /* Dark mode specific gradients */
-    --hero-bg: 270 20% 8%;
-    --gradient-primary: linear-gradient(135deg, hsl(270 91% 75%), hsl(280 91% 80%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270 20% 15%), hsl(280 20% 18%));
-    --gradient-hero: linear-gradient(135deg, hsl(270 20% 8%), hsl(280 20% 10%));
-    --glow-primary: 0 10px 40px hsl(270 91% 75% / 0.4);
-    --glow-secondary: 0 5px 20px hsl(270 30% 20% / 0.5);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+}
+
+/* Smooth scrolling for navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: var(--glow-primary); }
+  50% { box-shadow: var(--glow-secondary); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
 }

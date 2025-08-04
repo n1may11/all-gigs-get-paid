@@ -30,10 +30,10 @@ const Footer = () => {
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", href: "#privacy" },
-        { name: "Terms of Service", href: "#terms" },
-        { name: "COPPA Compliance", href: "#coppa" },
-        { name: "Safety Guidelines", href: "#safety-guidelines" }
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Terms of Service", href: "/terms" },
+        { name: "COPPA Compliance", href: "/coppa" },
+        { name: "Safety Guidelines", href: "/safety-guidelines" }
       ]
     }
   ];
@@ -57,16 +57,28 @@ const Footer = () => {
             {/* Newsletter Signup */}
             <div className="space-y-3">
               <h4 className="font-semibold text-foreground">Stay Updated</h4>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 px-3 py-2 text-sm bg-background border border-border/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-                <Button size="sm" variant="cta">
-                  <Mail size={16} />
-                </Button>
-              </div>
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                const email = (e.target as HTMLFormElement).email.value;
+                if (email) {
+                  console.log('Newsletter signup:', email);
+                  // TODO: Implement newsletter signup
+                  (e.target as HTMLFormElement).reset();
+                }
+              }}>
+                <div className="flex gap-2">
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Your email"
+                    required
+                    className="flex-1 px-3 py-2 text-sm bg-background border border-border/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  />
+                  <Button type="submit" size="sm" variant="cta">
+                    <Mail size={16} />
+                  </Button>
+                </div>
+              </form>
             </div>
           </div>
 

@@ -107,7 +107,11 @@ const WhyTeensLove = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="cta" size="lg">
+            <Button 
+              variant="cta" 
+              size="lg"
+              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               I Want Financial Freedom! 🚀
             </Button>
           </div>
