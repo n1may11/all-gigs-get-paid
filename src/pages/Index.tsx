@@ -85,14 +85,18 @@ const Index = () => {
       {/* Main Content */}
       <main>
         <HeroSection />
-        <div id="how-it-works">
+        <div id="why-teens-love">
           <WhyTeensLove />
         </div>
         <div id="safety">
           <ParentsSection />
         </div>
-        <HowItWorks />
-        <Testimonials />
+        <div id="how-it-works">
+          <HowItWorks />
+        </div>
+        <div id="testimonials">
+          <Testimonials />
+        </div>
         <div id="about">
           <FounderSection />
         </div>

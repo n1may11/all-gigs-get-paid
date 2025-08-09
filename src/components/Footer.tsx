@@ -1,30 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Mail, Twitter, Instagram, Linkedin } from "lucide-react";
-
+import { toast } from "@/components/ui/use-toast";
 const Footer = () => {
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" }, 
-    { icon: Linkedin, href: "#", label: "LinkedIn" }
+    { icon: Twitter, label: "Twitter" },
+    { icon: Instagram, label: "Instagram" }, 
+    { icon: Linkedin, label: "LinkedIn" }
   ];
 
   const footerLinks = [
     {
       title: "Product",
       links: [
-        { name: "How it Works", href: "#how-it-works" },
-        { name: "Safety", href: "#safety" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "Testimonials", href: "#testimonials" }
+        { name: "How it Works", href: "/#how-it-works" },
+        { name: "Why Teens Love", href: "/#why-teens-love" },
+        { name: "Testimonials", href: "/#testimonials" },
+        { name: "Join Waitlist", href: "/#waitlist" }
       ]
     },
     {
       title: "Company", 
       links: [
-        { name: "About", href: "#about" },
-        { name: "Blog", href: "#blog" },
-        { name: "Careers", href: "#careers" },
-        { name: "Contact", href: "#contact" }
+        { name: "About", href: "/#about" },
+        { name: "Parents", href: "/#safety" },
+        { name: "Contact", href: "mailto:hello@allgiggs.com" }
       ]
     },
     {
@@ -115,15 +114,21 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground">Follow us:</span>
-              {socialLinks.map(({ icon: Icon, href, label }) => (
-                <a
+              {socialLinks.map(({ icon: Icon, label }) => (
+                <button
                   key={label}
-                  href={href}
+                  type="button"
                   aria-label={label}
                   className="p-2 text-muted-foreground hover:text-primary transition-colors duration-200 hover:bg-primary/10 rounded-full"
+                  onClick={() =>
+                    toast({
+                      title: "Socials launching soon",
+                      description: "Follow us soon on Twitter, Instagram and LinkedIn.",
+                    })
+                  }
                 >
                   <Icon size={20} />
-                </a>
+                </button>
               ))}
             </div>
           </div>
