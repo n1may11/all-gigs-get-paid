@@ -57,7 +57,7 @@ const TermsOfService = () => {
                 <li>Payments are processed securely through Stripe</li>
                 <li>All earnings belong to the teen user</li>
                 <li>Parent/guardian oversight of earnings is encouraged</li>
-                <li>All Giggs takes a small service fee from completed jobs</li>
+                <li>All Giggs charges a 5% platform usage fee on all transactions processed through the platform</li>
                 <li>Dispute resolution is available through our support system</li>
               </ul>
             </section>
@@ -81,6 +81,7 @@ const TermsOfService = () => {
                 <li>Sharing personal contact information outside the platform</li>
                 <li>Engaging in inappropriate or unsafe job activities</li>
                 <li>Using the platform for anything other than legitimate job opportunities</li>
+                <li>Bypassing or attempting to bypass All Giggs' payment system, including arranging off-platform payments; violations will result in account suspension or ban</li>
               </ul>
             </section>
 
